@@ -20,6 +20,13 @@ sendButton.onclick = handleSendMessageClick;
 hangupButton.onclick = hangup;
 
 const messageInput = document.querySelector('input#message');
+const messageOutput = document.querySelector('div#morsecode');
+
+messageInput.onkeyup = function() {
+    const value = messageInput.value;
+    const morseCode = morseify(value);
+    messageOutput.innerHTML = morseCode.join(' ');
+}
 
 function handleSendMessageClick() {
     sendMessage(messageInput.value);
