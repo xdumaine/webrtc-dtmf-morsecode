@@ -1,4 +1,5 @@
-const morseCode = {
+'use strict';
+let morseCode = {
     'a': '.-',
     'b': '-...',
     'c': '-.-.',
@@ -49,8 +50,8 @@ const morseCode = {
     '=': '-...-',
     ' ': '/'
 }
-const morseify = function (string) {
-    string = string.toLowerCase().replace(/[^a-z0-9,\.:\?\/\-\(\)"@=\s]/g, '')
+let morseify = function (string) {
+    string = string.toLowerCase().replace(/[^a-z0-9,\.:\?\/\-\(\)"@=\s]/g, '');
     let output = [];
     for (let i = 0; i < string.length; i++) {
         output.push(morseCode[string.charAt(i)]);
