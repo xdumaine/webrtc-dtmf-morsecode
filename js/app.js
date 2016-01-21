@@ -13,9 +13,14 @@ const callButton = document.querySelector('#call');
 const sendButton = document.querySelector('#send');
 const hangupButton = document.querySelector('#hangup');
 
-callButton.disabled = false;
+callButton.disabled = !!RTCPeerConnection;
 sendButton.disabled = true;
 hangupButton.disabled = true;
+
+if (!RTCPeerConnection) {
+    alert(`Sorry, you won't be able to send messages, but you can still
+    translate text to morse code`);
+}
 
 callButton.onclick = call;
 sendButton.onclick = handleSendMessageClick;
