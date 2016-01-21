@@ -1,0 +1,28 @@
+{
+  "name": "dtmf-morse",
+  "version": "1.0.0",
+  "description": "A dumb little app for sending morse code messages via webrtc dtmf",
+  "main": "server.js",
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.5",
+    "babel-preset-es2015": "^6.3.13",
+    "express": "^4.13.3",
+    "nodemon": "^1.8.1",
+    "pem": "^1.8.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js --ignore 'js/app.min.js' --exec \"babel js/app.js --ignore=server.js -o js/app.min.js --presets es2015\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xdumaine/webrtc-dtmf-morsecode"
+  },
+  "author": "Xander Dumaine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xdumaine/webrtc-dtmf-morsecode/issues"
+  },
+  "homepage": "https://github.com/xdumaine/webrtc-dtmf-morsecode"
+}
