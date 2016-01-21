@@ -13,7 +13,7 @@ const callButton = document.querySelector('#call');
 const sendButton = document.querySelector('#send');
 const hangupButton = document.querySelector('#hangup');
 
-callButton.disabled = !!RTCPeerConnection;
+callButton.disabled = !RTCPeerConnection;
 sendButton.disabled = true;
 hangupButton.disabled = true;
 

@@ -13,7 +13,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js --ignore 'js/app.min.js' --exec \"babel js/app.js --ignore=server.js -o js/app.min.js --presets es2015\""
+    "start": "nodemon server.js --ignore 'js/app.min.js' --exec \"babel js/app.js --ignore=server.js -o js/app.min.js --presets es2015\"",
+    "build": "babel js/app.js --ignore=server.js -o js/app.min.js --presets es2015"
   },
   "repository": {
     "type": "git",
