@@ -50,3 +50,19 @@ img {
     font-size: 15px;
     padding: 10px;
 }
+
+#fork-me {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#fork-me a {
+    color: dodgerblue;
+}
+
+#fork-me a:visited {
+    color: dodgerblue;
+}
