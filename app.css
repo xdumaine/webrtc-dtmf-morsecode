@@ -13,6 +13,11 @@ body {
     color: limegreen;
 }
 
+#container {
+    position: relative;
+    padding-bottom: 35px;
+}
+
 img {
     width: 300px;
     max-width: 100%;
